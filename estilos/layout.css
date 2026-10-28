@@ -1,0 +1,82 @@
+.efeito-fundo {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: radial-gradient(
+    600px at var(--x, 50%) var(--y, 50%),
+    rgba(100, 255, 218, 0.08),
+    transparent 40%
+  );
+  transition: background 0.1s linear;
+}
+
+.estrutura-principal {
+  display: flex;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 4rem;
+  padding-top: 2rem;
+}
+
+.barra-lateral {
+  width: 38%;
+  height: fit-content;
+  max-height: calc(100vh - 4rem);
+  padding: 3rem 0;
+  position: sticky;
+  top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  will-change: transform;
+}
+
+.barra-lateral h1 {
+  font-size: 2.5rem;
+}
+
+.barra-lateral h2 {
+  font-size: 1rem;
+}
+
+.introducao {
+  font-size: 0.9rem;
+}
+
+.painel-conteudo {
+  width: 62%;
+  padding: 6rem 0 6rem 6rem;
+}
+
+.secao-conteudo {
+  margin-bottom: 8rem;
+}
+
+.secao-conteudo h2 {
+  display: flex;
+  align-items: center;
+  font-size: 1.35rem;
+  margin-bottom: 2.5rem;
+}
+
+.secao-conteudo h2::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--bg-light);
+  margin-left: 2rem;
+}
+
+.secao-conteudo p {
+  max-width: 620px;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 1.6rem;
+}
+
+.rodape {
+  margin-top: 6rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  opacity: 0.7;
+}

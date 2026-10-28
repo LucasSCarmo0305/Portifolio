@@ -1,0 +1,214 @@
+.galeria-projetos {
+  margin-top: 3rem;
+}
+
+.vitrine-projeto {
+  margin: 1.8rem 0;
+}
+
+.tecnologias-projeto {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem 1.6rem;
+  margin-top: 1rem;
+}
+
+.tecnologias-projeto li {
+  font-size: 0.75rem;
+  color: var(--accent);
+  letter-spacing: 0.05em;
+}
+
+.carrossel-projeto {
+  overflow-x: auto;
+  padding: 10px 0;
+}
+
+.trilho-carrossel {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.trilho-carrossel img {
+  flex: 0 0 100%;
+  width: 100%;
+  height: 40vh;
+  object-fit: contain;
+  background: #020c1b;
+  border-radius: 9px;
+  scroll-snap-align: start;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.6);
+  cursor: zoom-in;
+}
+
+.botao-projeto {
+  display: block;
+  margin-top: 1.4rem;
+  padding: 0.8rem;
+  text-align: center;
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition: background 0.3s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.botao-projeto:hover {
+  background: rgba(100, 255, 218, 0.15);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(100, 255, 218, 0.18);
+}
+
+.cartao-projeto {
+  background: rgba(17, 34, 64, 0.4);
+  border: 1px solid rgba(100, 255, 218, 0.1);
+  border-radius: 8px;
+  padding: 2.2rem;
+  margin-top: 2.5rem;
+  transition: transform 0.35s ease, background 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+}
+
+.cartao-projeto:hover {
+  transform: translateY(-6px);
+  background: rgba(17, 34, 64, 0.75);
+  border-color: rgba(100, 255, 218, 0.3);
+  box-shadow: 0 15px 35px -15px rgba(2, 12, 27, 0.8);
+}
+
+.cabecalho-projeto {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.etiqueta-categoria {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.cartao-projeto h3 {
+  font-size: 1.25rem;
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+.descricao-projeto {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.vitrine-projeto {
+  margin: 1.5rem 0;
+}
+
+.carrossel-projeto {
+  overflow-x: auto;
+  padding: 5px 0;
+}
+
+.trilho-carrossel {
+  display: flex;
+  gap: 1.2rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.trilho-carrossel img {
+  flex: 0 0 100%;
+  width: 100%;
+  height: 38vh;
+  object-fit: contain;
+  background: #020c1b;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  scroll-snap-align: start;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  cursor: zoom-in;
+}
+
+.lista-tecnologias-projeto {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.8rem;
+}
+
+.selo-projeto {
+  font-size: 0.75rem;
+  color: var(--accent);
+  background: rgba(100, 255, 218, 0.08);
+  border: 1px solid rgba(100, 255, 218, 0.2);
+  padding: 0.35rem 0.8rem;
+  border-radius: 20px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
+
+.acoes-projeto {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.botao-acao {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 1.4rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.botao-principal {
+  background: rgba(100, 255, 218, 0.1);
+  border: 1px solid var(--accent);
+  color: var(--accent);
+}
+
+.botao-principal:hover {
+  background: rgba(100, 255, 218, 0.25);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(100, 255, 218, 0.2);
+}
+
+.botao-secundario {
+  background: transparent;
+  border: 1px solid var(--text-muted);
+  color: var(--text-main);
+}
+
+.botao-secundario:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+  .acoes-projeto {
+    flex-direction: column;
+  }
+  
+  .botao-acao {
+    width: 100%;
+    text-align: center;
+  }
+}

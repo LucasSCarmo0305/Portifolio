@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #020c1b;
+  color: #ccd6f6;
+  line-height: 1.6;
+  font-size: 15px;
+  overflow-x: hidden;
+}
+
+:root {
+  --bg-dark: #020c1b;
+  --bg-light: #112240;
+  --text-main: #ccd6f6;
+  --text-muted: #8892b0;
+  --accent: #64ffda;
+}
